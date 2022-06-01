@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApis.Views.DoctorDetailsView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Detalles Doctor"
+                VerticalOptions="Start" FontSize="30" TextColor="Blue"
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="{Binding Doctor.Apellido}"
+                   FontSize="25" TextColor="Black"/>
+            <Label Text="{Binding Doctor.Especialidad}"
+                   FontSize="25" TextColor="red"/>
+            <Label Text="{Binding Doctor.Salario, StringFormat='Salario: {0}'}"
+                   FontSize="25" TextColor="green"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
